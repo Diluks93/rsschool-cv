@@ -308,3 +308,21 @@ btnClose.addEventListener('click', closeModal);
 ---
 
 ## Work experience
+
+Developed by: 
+* construction company website **[izogradiy](https://github.com/Diluks93/Izogradiy.git)**;
+* training website **[uber](https://github.com/Diluks93/uber.git)**;
+* website **[pulse](https://github.com/Diluks93/pulse.git)**;
+
+Studied on courses:
+* [WayUP](https://wayup.in/);
+* [beONmax](https://beonmax.com/);
+* [code-basics](https://ru.code-basics.com/);
+* [JavaRush](https://javarush.ru);
+
+Learning documentation:
+* [MDN](https://developer.mozilla.org/ru/);
+* [WebRef](https://webref.ru/html);
+* [jQuery](http://jquery.page2page.ru/index.php5/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0);
+* [JavaScript](https://learn.javascript.ru/);
+* [w3c](https://www.w3schools.com/);

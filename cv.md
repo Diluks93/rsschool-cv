@@ -182,3 +182,125 @@ tabs.addEventListener('click', e => {
     }
 })
 ```
+
+### My ModalWindow
+
+**HTML**
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3.Modal Window</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Modal Window</h1>
+    <div class="flex-wrapper">
+        <button id="btn-open">Open</button>
+    </div>
+    <div id="wrapper-modal">
+        <div id="overlay"></div>
+        <div id="modal-window">
+            <div>
+                <button id="btn-close">Close modal</button>
+            </div>
+            <div class="content">
+                any content
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
+```
+
+**CSS**
+```
+html {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.flex-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#btn-open {
+    width: 150px;
+    height: 40px;
+    background-color: red;
+    color: #ffffff;
+    font-size: 22px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#wrapper-modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#wrapper-modal.active {
+    display: block;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+#modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    border: 1px solid black;
+    background-color: #ffffff;
+}
+```
+
+**JS**
+
+```
+const btnOpen = document.getElementById('btn-open'),
+    modal = document.getElementById('wrapper-modal'),
+    overlay = document.getElementById('overlay'),
+    btnClose = document.getElementById('btn-close');
+
+btnOpen.addEventListener('click', function() {
+    modal.classList.add('active');
+});
+
+function closeModal() {
+    modal.classList.remove('active');
+}
+
+overlay.addEventListener('click', closeModal);
+btnClose.addEventListener('click', closeModal);
+```

@@ -20,3 +20,6 @@
     * [GitHub](https://github.com/Diluks93) ![GitHub](/icons/github.svg); 
     * [Diskord](https://discord.com/Diluks#8227) ![Discord](/icons/discord.svg);
 ---
+
+## Personal informations
+

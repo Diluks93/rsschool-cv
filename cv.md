@@ -5,10 +5,10 @@
 ## My contacts 
 
 **Phone:** +375 (29) 165-79-57 *mobile operate* A1
-* Viber
-* Telegram
-* WhatsApp
+* Viber ![Viber](/icons/viber.svg)
+* Telegram ![Telegram](/icons/telegram.svg)
+* WhatsApp ![WhatsApp](/icons/whatsapp.svg)
 
-**E-mail:** mr.ilyukovich@mail.ru && mr.ilyukovich@gmail.com
+**E-mail:** ![Mail.ru](/icons/mail.svg) mr.ilyukovich@mail.ru && ![Gmail.com](/icons/gmail.svg) mr.ilyukovich@gmail.com
 
-**Social:** [Facebook], [VK](https://vk.com/dmitriyfart), [Instagram](https://www.instagram.com/dimkaizum/), [GitHub](https://github.com/Diluks93) 
+**Social:** [VK](https://vk.com/dmitriyfart) ![Vkontakte](/icons/vk.svg), [Instagram](https://www.instagram.com/dimkaizum/) ![Instagram](/icons/instagram.svg), [GitHub](https://github.com/Diluks93) ![GitHub](/icons/github.svg), [Diskord](https://discord.com/Diluks#8227) ![Discord](/icons/discord.svg)

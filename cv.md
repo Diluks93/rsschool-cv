@@ -26,12 +26,15 @@
 
 My goal is **Full-stuck developer**.
 I want to navigate from all sides of the application release.
+
 My strengths: 
 * *perseverance,* 
 * *I understand as much as possible what I am doing,* 
 * *learnability,* 
 * *dedication,* 
 * *enthusiasm.*
+
 I haven’t worked in IT, but I’ve been going to turn my life around for a long time. I am well versed in Word, Excel, PowerPoint, AutoCAD, Adobe Reader and other similar applications.
+
 **I always love to learn new things. I love to study.**
 ---

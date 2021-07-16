@@ -1,13 +1,13 @@
 # cv && resume
 
-## **Name:** *Dmitri* **LastName:** *Ilyukovich* 
+## **Name:** *Dmitrii* **LastName:** *Ilyukovich* 
 
 ## My contacts 
 
 **Phone:** +375 (29) 165-79-57 *mobile operate* A1
-> Viber
-> Telegram
-> WhatsApp
+* Viber
+* Telegram
+* WhatsApp
 
 **E-mail:** mr.ilyukovich@mail.ru && mr.ilyukovich@gmail.com
 

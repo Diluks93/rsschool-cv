@@ -347,3 +347,4 @@ Completed courses:
 
 ## English
 
+My English level is A0. I want to go to English courses because I feel the need to. I write my current resume using google translate.

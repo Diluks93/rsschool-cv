@@ -305,8 +305,6 @@ overlay.addEventListener('click', closeModal);
 btnClose.addEventListener('click', closeModal);
 ```
 
----
-
 ## Work experience
 
 Developed by: 
@@ -326,7 +324,22 @@ Learning documentation:
 * [jQuery](http://jquery.page2page.ru/index.php5/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0);
 * [JavaScript](https://learn.javascript.ru/);
 * [w3c](https://www.w3schools.com/);
+* [Git](git-scm.com);
 
 ---
 
 ## Education
+
+Full-time higher education in construction in the direction of **"Highways"**.
+
+Higher education by correspondence in the direction of **"Industrial and civil construction"**.
+
+Master's degree in absentia on the specialization **"Construction"**.
+
+Completed courses:
+* in the IT-laboratory at the University of the Belarusian-Russian University;
+* free courses on the [WayUP](https://wayup.in/) platform;
+* paid courses on the [beONmax](https://beonmax.com/) platform (currently I have a subscription, I am taking it in parallel with the course at RS School);
+* according to the guideline I take courses on [code-basics](https://ru.code-basics.com/);
+
+---

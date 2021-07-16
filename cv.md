@@ -1,7 +1,6 @@
 # CV && RESUME
 
 ## **Name:** *Dmitrii* **LastName:** *Ilyukovich* 
----
 
 ## My contacts 
 
@@ -9,6 +8,7 @@
     * ![Viber](/icons/viber.svg) Viber;
     * ![Telegram](/icons/telegram.svg) Telegram;
     * ![WhatsApp](/icons/whatsapp.svg) WhatsApp;
+
   **Phone:** +375 (33) 692-12-15 *mobile operate* MTC
 
 * **E-mail:** 
@@ -20,6 +20,8 @@
     * ![Instagram](/icons/instagram.svg) [Instagram](https://www.instagram.com/dimkaizum/); 
     * ![GitHub](/icons/github.svg) [GitHub](https://github.com/Diluks93); 
     * ![Discord](/icons/discord.svg) [Discord](https://discord.com/Diluks#8227);
+    * ![Skype](/icons/skype.svg) [Skype](https://join.skype.com/invite/OsjFBuVWbuTr);
+
 ---
 
 ## Personal information

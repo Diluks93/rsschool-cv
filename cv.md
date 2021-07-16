@@ -7,7 +7,7 @@
 
 * **Phone:** +375 (29) 165-79-57 *mobile operate* A1
     * ![Viber](/icons/viber.svg) Viber;
-    * ![Telegram](/icons/telegram.svg) Telegra;
+    * ![Telegram](/icons/telegram.svg) Telegram;
     * ![WhatsApp](/icons/whatsapp.svg) WhatsApp;
   **Phone:** +375 (33) 692-12-15 *mobile operate* MTC
 

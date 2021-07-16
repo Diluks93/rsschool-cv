@@ -38,3 +38,6 @@ I haven’t worked in IT, but I’ve been going to turn my life around for a lon
 
 **I always love to learn new things. I love to study.**
 ---
+
+## Ability
+

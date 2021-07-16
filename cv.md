@@ -19,8 +19,7 @@
     * ![Vkontakte](/icons/vk.svg) [VK](https://vk.com/dmitriyfart);
     * ![Instagram](/icons/instagram.svg) [Instagram](https://www.instagram.com/dimkaizum/); 
     * ![GitHub](/icons/github.svg) [GitHub](https://github.com/Diluks93); 
-    * ![Discord](/icons/discord.svg) [Diskord](https://discord.com/Diluks#8227);
+    * ![Discord](/icons/discord.svg) [Discord](https://discord.com/Diluks#8227);
 ---
 
-## Personal informations
-
+## Personal information

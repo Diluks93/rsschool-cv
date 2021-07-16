@@ -37,6 +37,7 @@ My strengths:
 I haven’t worked in IT, but I’ve been going to turn my life around for a long time. I am well versed in Word, Excel, PowerPoint, AutoCAD, Adobe Reader and other similar applications.
 
 **I always love to learn new things. I love to study.**
+
 ---
 
 ## Ability
@@ -58,3 +59,7 @@ I think I know ![GIT](/icons/git.svg) **GIT** 2/5 and am eager to learn it (very
 I am using ![Gulp](/icons/gulp.svg) **Gulp**. Not my own development, but downloaded and sorted out [gulp-scss-starter-master](https://github.com/andreyalexeich/gulp-scss-starter). I always try to minimize code (*SVG sprites, fonts, image re-encoding without loss of quality*).
 
  I work with ![Figma](/icons/figma.svg) **Figma**, ![Photoshop](/icons/photoshop.svg) **Photoshop**. 
+
+ ---
+
+## Code examples

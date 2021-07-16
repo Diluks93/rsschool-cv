@@ -65,3 +65,120 @@ I am using ![Gulp](/icons/gulp.svg) **Gulp**. Not my own development, but downlo
  ---
 
 ## Code examples
+
+### My tabs
+
+**HTML**
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2.Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>TABS</h1>
+    <div class="tabs-block-wrapper">
+        <div id="tabs">
+            <div class="tab-btn active" data-btn="1">1</div>
+            <div class="tab-btn" data-btn="2">2</div>
+            <div class="tab-btn" data-btn="3">3</div>
+        </div>
+        <div id="contents">
+            <div class="content active" data-content="1">Content 1</div>
+            <div class="content" data-content="2">Content 2</div>
+            <div class="content" data-content="3">Content 3</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
+```
+
+**CSS**
+```
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.tabs-block-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#tabs {
+    display: flex;
+}
+
+.tab-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.tab-btn.active {
+    background-color: blue;
+    color: #ffffff;
+}
+
+.tab-btn.show {
+    background-color: blue;
+    color: #ffffff;
+}
+
+#contents {
+    max-width: 300px;
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+```
+
+**JS**
+```
+const tabs = document.getElementById('tabs'),
+    contents = document.querySelectorAll('.content'),
+//console.log(contents);
+
+const changeClass = el => {
+    for (let i = 0; i < tabs.children.length; i++) {
+        tabs.children[i].classList.remove('active');
+    }
+    el.classList.add('active');
+}
+
+tabs.addEventListener('click', e => {
+    const currTab = e.target.dataset.btn;
+    changeClass(e.target);
+    for (let i = 0; i < contents.length; i++) {
+        contents[i].classList.remove('active');
+        if (contents[i].dataset.content === currTab) {
+            contents[i].classList.add('active');
+        }
+    }
+})
+```

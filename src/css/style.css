@@ -1,2 +1,2 @@
-*{-webkit-box-sizing:border-box;box-sizing:border-box;max-height:1124px;max-width:794px;font-family:'Merriweather Sans', sans-serif;font-weight:400}
+.container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:0 auto}.about{width:25%;background-color:#174180}*{-webkit-box-sizing:border-box;box-sizing:border-box;max-height:1124px;max-width:794px;font-family:'Merriweather Sans', sans-serif;font-weight:400}
 /*# sourceMappingURL=style.css.map */

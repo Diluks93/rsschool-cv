@@ -1,24 +1,89 @@
 <!doctype html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="This is CV 'Dmitrii Ilyukovich' on task HTML, CSS & Git Basics">
- <meta name="keywords" content="rsschool, CV, Resume HTML, CSS, Git, Basics">
- <meta name="author" content="Dmitrii Ilyukovich(@Diluks93)">
- <link rel="shortcut icon" href="src/icons/favicon.ico" type="image/x-icon">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;0,800;1,300&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="src/css/bootstrap-reboot.min.css">
- <link rel="stylesheet" href="src/css/style.css">
- <title>CV</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is CV 'Dmitrii Ilyukovich' on task HTML, CSS & Git Basics">
+  <meta name="keywords" content="rsschool, CV, Resume HTML, CSS, Git, Basics">
+  <meta name="author" content="Dmitrii Ilyukovich(@Diluks93)">
+  <link rel="shortcut icon" href="src/icons/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;0,800;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>CV</title>
 </head>
+
 <body>
- <div class="container">
-  <section class="about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis perspiciatis nostrum odio. Minus aspernatur, atque libero explicabo, laborum veritatis neque tempora quidem quaerat maxime et ratione assumenda beatae quos reprehenderit?</section>
-  <main class="main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, voluptatem cumque nam cum incidunt dicta ut ipsum dolorum optio eum aperiam modi sequi, nobis rerum nesciunt hic, fugiat dolore doloribus?</main>
- </div>
+  <div class="container">
+    <section class="about">
+      <header class="header block">
+          <div class="header__avatar"></div>
+          <h1 class="header__title">dmitrii <span>ilyukovich</span></h1>
+          <h2 class="header__subtitle">student rsschool</h2>
+      </header>
+      <aside class="contact block">
+        <h2 class="contact__title">contact me</h2>
+        <hr>
+        <div class="contact__wrapper">
+          <svg class="icon">
+            <use xlink:href="src/icons/sprite.svg#phone"></use>
+          </svg>
+          <div>
+            <span>phone:</span>
+            <a href="tel:+375291657957" class="contact__phone">+375 (29) 165-79-57</a>
+            <a href="tel:+375336921215" class="contact__phone">+375 (33) 692-12-15</a>
+          </div>
+        </div>
+        <div class="contact__wrapper">
+          <svg class="icon">
+            <use xlink:href="src/icons/sprite.svg#marker"></use>
+          </svg>
+          <div>
+            <span>address:</span>
+            <address class="contact__address">belarus, mogilev</address>
+          </div>
+        </div>
+        <div class="contact__wrapper">
+          <svg class="icon">
+            <use xlink:href="src/icons/sprite.svg#mail"></use>
+          </svg>
+          <div>
+            <span>e-mail:</span>
+            <a href="email:mr.ilyukovich@gmail.com" class="contact__email">mr.ilyukovich@gmail.com</a>
+            <a href="email:mr.ilyukovich@mail.ru" class="contact__email">mr.ilyukovich@mail.ru</a>
+          </div>
+        </div>
+      </aside>
+      <aside class="follow block">
+        <h2 class="follow__title">follow me</h2>
+        <hr>
+        <div class="follow__wrapper">
+          <svg class="icon">
+            <use xlink:href="src/icons/sprite.svg#phone"></use>
+          </svg>
+          <a href="tel:+375291657957" class="contact__phone">+375 (29) 165-79-57</a>
+        </div>
+        <div class="contact__wrapper">
+          <svg class="icon">
+            <use xlink:href="src/icons/sprite.svg#marker"></use>
+          </svg>
+          <address class="contact__address">Republick of Belarus, <br>Mogilev</address>
+        </div>
+        <div class="contact__wrapper">
+          <svg class="icon">
+            <use xlink:href="src/icons/sprite.svg#mail"></use>
+          </svg>
+          <a href="email:mr.ilyukovich@gmail.com" class="contact__email">mr.ilyukovich@gmail.com</a>
+        </div>
+      </aside>
+    </section>
+
+    <main class="main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, voluptatem cumque nam cum incidunt dicta ut ipsum dolorum optio eum aperiam modi sequi, nobis rerum nesciunt hic, fugiat dolore doloribus?</main>
+  </div>
 </body>
+
 </html>

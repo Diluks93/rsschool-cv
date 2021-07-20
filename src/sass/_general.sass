@@ -1,25 +1,31 @@
 .container
   display: flex
-.about
+  border: 1px solid $gray
+.connection
   width: 31%
 .main
   width: 69%
 
 .block
-  margin-top: 20px
-  margin-left: 20px
+  margin-top: 15px
+  margin-left: 15px
   padding: 20px
   text-align: center
   color: $white
   background-color: $blackSea
   border-radius: 15px
+  &:last-child
+    margin-bottom: 15px
+  hr
+    margin-top: 0
+    margin-bottom: 0
 
 .header
   &__avatar
     width: 125px
     height: 125px
     text-align: center
-    background: url("../img/avatar.jpg") top center/cover no-repeat
+    background: url("../img/avatar.jpg") 33% 10%/150% no-repeat
     border-radius: 100%
   &__title
     margin-top: 10px
@@ -32,8 +38,6 @@
 
 .contact,
 .follow
-  hr
-    margin-top: 0
   &__title
     font-size: 20px
     font-weight: 700
@@ -44,6 +48,14 @@
     justify-content: space-between
     align-items: center
     fill: $aquamarine
+    &:nth-child(6)
+      div
+        margin-left: 11px
+      .icon
+        width: 28px
+        height: 28px  
+        margin-left: -4px
+        fill: $aquamarine 
     div
       margin-left: 15px
     span
@@ -55,8 +67,15 @@
     width: 20px
     height: 20px
     margin: 0
+    &:nth-child(n+2):nth-child(-n+3)
+      width: 18px
+      height: 18px
+    &__wrapper
+      margin: 0
+      text-align: left      
   &__phone,
-  &__email
+  &__email,
+  &__link
     display: block
     font-size: 12px
     text-decoration: none
@@ -71,6 +90,9 @@
     font-size: 12px
     text-align: left
     text-transform: capitalize
-    color: $aquamarine   
+    color: $aquamarine 
+.follow
+  &__wrapper
+    
 
 

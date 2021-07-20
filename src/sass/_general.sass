@@ -102,15 +102,17 @@
 .education,
 .ability
   display: block
-  margin: 12px 10px
-  font-size: 12px
-  line-height: 17px
+  margin: 5px 10px
+  font-size: 13px
+  line-height: 18px
   text-align: justify
   color: $black
   border-right: 1px solid $blackSea
   border-bottom-right-radius: 40px
   border-bottom: 1px solid $blackSea 
-  box-shadow: 2px 2px 10px $gray  
+  box-shadow: 2px 2px 10px $gray 
+  &:first-child
+    margin-top: 12px 
   &:last-child
     margin-bottom: 0 
   &__title
@@ -124,6 +126,7 @@
   &__descr
     padding: 10px
     padding-top: 0
+    padding-bottom: 5px
     ul
       margin: 5px 0
     li::marker
@@ -136,7 +139,6 @@
 .education
   &__descr
     position: relative
-    z-index: 2
     span
       display: block
       margin-left: 25px

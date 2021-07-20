@@ -125,6 +125,8 @@
         margin-top: 5px
 .education
   &__descr
+    position: relative
+    z-index: 2
     span
       display: block
       margin-left: 25px
@@ -134,3 +136,26 @@
       color: $black
       &:hover
         color: $black
+/* TABS */
+a .active
+  color: $blackSea
+#contents
+  position: absolute
+  left: 40%
+  top: 20%
+  max-width: 300px
+  width: 100%
+  height: 150px 
+.content
+  display: none
+.content.active 
+  display: block
+  padding: 15px
+  font-size: 10px
+  line-height: 15px
+  font-weight: 400
+  color: $aquamarine
+  background-color: rgba(23, 65, 128, 0.9)
+  border-radius: 15px
+  box-shadow: 0 0 10px $gray
+/* END TABS */

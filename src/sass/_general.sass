@@ -25,7 +25,7 @@
     width: 125px
     height: 125px
     text-align: center
-    background: url("../img/avatar.jpg") 33% 10%/150% no-repeat
+    background: url("../img/avatar.jpg") 48% 24%/200% no-repeat
     border-radius: 100%
   &__title
     margin-top: 10px
@@ -37,7 +37,8 @@
     font-size: 14px
 
 .contact,
-.follow
+.follow,
+.certification
   &__title
     font-size: 20px
     font-weight: 700
@@ -91,8 +92,45 @@
     text-align: left
     text-transform: capitalize
     color: $aquamarine 
-.follow
-  &__wrapper
-    
 
-
+.about,
+.education
+  display: block
+  margin: 15px 10px
+  font-size: 14px
+  line-height: 20px
+  color: $black
+  border-right: 1px solid $blackSea
+  border-bottom-right-radius: 40px
+  border-bottom: 1px solid $blackSea 
+  box-shadow: 2px 2px 10px $gray   
+  &__title
+    padding: 10px
+    text-transform: uppercase
+    font-weight: 800
+    color: $white
+    background-color: $blackSea
+    border-bottom: 1px solid $blackSea    
+  &__descr
+    padding: 10px
+    padding-top: 0
+    ul
+      margin: 5px 0
+    li::marker
+      color: $blackSea
+    span
+      font-weight: 800
+      &:last-child
+        display: block
+        margin-top: 5px
+.education
+  &__descr
+    span
+      display: block
+      margin-left: 25px
+    &_link
+      font-weight: 800
+      text-decoration: none
+      color: $black
+      &:hover
+        color: $black

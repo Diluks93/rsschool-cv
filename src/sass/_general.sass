@@ -6,6 +6,7 @@ body
 .main
   display: flex
   flex-direction: column
+  justify-content: space-between
   align-content: space-between
   width: 31%
 .main
@@ -115,7 +116,7 @@ body
   &:first-child
     margin-top: 12px 
   &:last-child
-    margin-bottom: 0 
+    margin-bottom: 12px 
   &__title
     padding: 5px
     font-size: 22px
@@ -192,6 +193,52 @@ a .active
   border-radius: 15px
   box-shadow: 0 0 10px $gray
 /* END TABS */
+
 .footer
   display: flex
-  margin-top: 10px
+  justify-content: space-between
+  align-items: center
+  margin: 0 10px 10px
+  padding: 5px
+  background-color: $blackSea
+  border-radius: 15px
+  color: $aquamarine
+  &__link
+    display: block
+    width: 100px
+    height: 40px
+  &__img
+    fill: $aquamarine
+    width: 100px
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    fill: $aquamarine
+    &:last-child
+      flex-direction: row
+    .icon
+      width: 20px
+      height: 20px  
+      margin-left: 0px
+      fill: $aquamarine 
+    div
+      height: 40px
+      margin-left: 10px
+    span
+      font-size: 10px
+    .footer__link
+      font-size: 10px
+      text-decoration: none
+      color: $aquamarine
+      &:hover
+        color: $aquamarine
+  &__title
+    margin-bottom: 2px
+    text-align: center
+    font-size: 14px
+  &__subtitle
+    margin-bottom: 2px
+    font-size: 10px
+    

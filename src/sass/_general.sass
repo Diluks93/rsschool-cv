@@ -51,7 +51,11 @@ body
 
 .contact,
 .follow,
-.certification
+.certification,
+.experience
+  ul
+    list-style-type: none
+    padding-left: 0
   &__title
     font-size: 20px
     font-weight: 700
@@ -143,7 +147,8 @@ body
       margin: 5px 0
     li::marker
       color: $blackSea
-    span
+    span,
+    time
       font-weight: 800
       &:last-child
         display: block
@@ -151,9 +156,8 @@ body
 .education
   &__descr
     position: relative
-    span
-      display: block
-      margin-left: 25px
+    time
+      margin: 0 10px 
     &_link
       font-weight: 800
       text-decoration: none

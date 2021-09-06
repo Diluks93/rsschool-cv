@@ -19,7 +19,8 @@ body
   padding: 20px
   text-align: center
   color: $white
-  background-color: $blackSea
+  background: $blackSea
+
   border-radius: 15px
   &:last-child
     margin-bottom: 12px
@@ -28,12 +29,17 @@ body
     margin-bottom: 0
 
 .header
+  figure
+    max-width: 50%
+    margin: 0 auto
   &__avatar
     width: 125px
     height: 125px
     text-align: center
-    background: url("../img/avatar.jpg") 48% 24%/200% no-repeat
     border-radius: 100%
+    object-position: -128px
+    object-fit: cover
+    
   &__title
     margin-top: 10px
     font-size: 20px
@@ -117,6 +123,10 @@ body
   border-bottom-right-radius: 40px
   border-bottom: 1px solid $blackSea 
   box-shadow: 2px 2px 10px $gray 
+  background: #C9D6FF
+  background: -webkit-linear-gradient(to top, #E2E2E2, #C9D6FF)
+  background: linear-gradient(to top, #E2E2E2, #C9D6FF)
+
   &:first-child
     margin-top: 12px 
   &:last-child

@@ -1,10 +1,27 @@
 @import "variables"
+@import "mixins"
+@import "fonts"
+@import "title"
+@import "buttons"
+@import "menu"
+
 @import "general"
 
 *
  box-sizing: border-box
- max-height: 1124px
- max-width: 794px
- font-family: 'Merriweather Sans', sans-serif
- font-weight: 400
+ font-family: $family
+ font-weight: 500
  margin: 0 auto
+ font-display: swap
+ scroll-behavior: smooth
+
+.container
+  display: block
+  max-width: 1140px
+  margin: 0 auto
+
+.divider
+  height: 3px
+  width: 60px
+  background: $mainColor
+  margin: 0

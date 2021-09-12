@@ -1,0 +1,8 @@
+.idea
+.vscode
+/feature
+src/example.jpg
+src/css/*.map
+src/sass/*.txt
+*/pp
+*.md

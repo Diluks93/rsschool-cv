@@ -1,3 +1,5 @@
+// interactive hamburger //
+
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       closeElem = document.querySelector('.close');
@@ -9,6 +11,8 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
   menu.classList.remove('active')
 });
+
+// element tabs //
 
 const tab = document.getElementById('tabs'),
       content = document.querySelectorAll('.content');
@@ -22,6 +26,8 @@ tab.addEventListener('mouseover', (e) => {
     }
   }
 });
+
+// styles video-player control //
 
 const player = document.querySelector('.video__player'),
   video = document.querySelector('.video__video'),

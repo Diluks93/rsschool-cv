@@ -1,0 +1,110 @@
+// --- HEADER -------------------- //
+.sidepanel
+  height: 50%
+  width: 5%
+  position: absolute
+  bottom: 50%
+  transform: translateY(30%)
+  left: 5%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  z-index: 3
+  color: $white
+  margin: 0
+  .top
+    position: absolute
+    top: -110px
+  .bottom
+    position: absolute
+    bottom: -325px
+  .left
+    position: absolute
+    left: -50px
+    top: -30px
+  .right
+    position: absolute
+    right: -100px
+    bottom: -250px
+  &__links
+    list-style: none
+    padding: 0
+    display: flex
+    flex-direction: column-reverse
+    flex-wrap: wrap
+    height: 44%
+    column-gap: 15px
+  &__icon
+    max-width: 20px
+    max-height: 20px
+    fill: $white
+    transform: rotate(270deg)
+    margin-top: 15px
+    transition: fill, 0.5s
+    &:hover
+      fill: $mainColor
+    &:active
+      fill: $white
+  &__diveder
+    width: 0px
+    height: 90px
+    border: 2px solid $white
+    transform: rotate(180deg)
+  &__text
+    transform: rotate(270deg)
+    position: absolute
+    bottom: 0
+    width: 150%
+    @include before_circle
+    &::before
+      left: -15px
+.promo
+  background: #11998e
+  background: -webkit-linear-gradient(to top, #11998e, #38ef7d)
+  background: linear-gradient(to top, #11998e, #38ef7d)
+  min-height: 100vh
+  position: relative
+  overflow: hidden
+  &__wrap
+    position: absolute
+    padding-top: 206px
+    z-index: 10
+  &__subtitle
+    position: relative
+    z-index: 10
+    padding-left: 10px
+    @include before_circle
+  &__title
+    width: 51%
+    margin: 0
+    margin-top: 10px
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  &__btns
+    margin: 0
+    margin-top: 25px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    width: 25%
+    column-gap: 44px
+  &__link
+    margin: 0
+    text-decoration: none
+    color: $white
+    font-size: 14px
+    transition: all, 0.5s
+    font-weight: bold
+    &:hover
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      color: $white
+    &:active
+      text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25)
+      color: $mainColor
+  &__img
+    width: 110%
+    height: 100%
+    position: absolute
+    left: 0px
+    top: 10px
+    z-index: 0

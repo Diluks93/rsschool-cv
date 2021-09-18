@@ -27,161 +27,21 @@ tab.addEventListener('mouseover', (e) => {
   }
 });
 
-// styles video-player control //
-
-const player = document.querySelector('.video__player'),
-  video = document.querySelector('.video__video'),
-  play = document.querySelector('button'),
-  toggle = document.querySelector('.toggle-play'),
-  progress = document.getElementById('progress'),
-  progressBar = document.getElementById('progress-filled'),
-  volume = document.getElementById('volume'),
-  mute = document.getElementById('mute'),
-  fullscreen = document.getElementById('fullscreen');
-
-// change button play or pause
-function togglePlay() {
-  const playState = video.paused ? 'play' : 'pause';
-  video[playState]();
-}
-
-function updateButton() {
-  const togglePlayBtn = document.querySelector('.toggle-play');
-
-  if (this.paused) {
-    togglePlayBtn.innerHTML = `<svg class="icon"><use xlink:href="src/icons/videoSpriteIcons.svg#playSmall"></use></svg>`;
-    play.innerHTML = `<svg class="icon"><use xlink:href="src/icons/videoSpriteIcons.svg#play"></use></svg>`;
-  } else {
-    togglePlayBtn.innerHTML = `<svg class="icon"><use xlink:href="src/icons/videoSpriteIcons.svg#pauseSmall"></use></svg>`;
-    play.innerHTML = ``;
-  }
-}
-
-// interactive progress progress
-function scrub(e) {
-  const scrubTime =
-    (e.offsetX / progress.offsetWidth) * video.duration;
-  video.currentTime = scrubTime;
-}
-
-// interactive volume
-function videoChangeVolume() {
-  let vol = volume.value / 100;
-  video.volume = vol;
-}
-
-function videoMute() {
-  if (video.volume === 0) {
-    video.volume = volume.value / 100;
-    mute.innerHTML = `<svg class="icon"><use xlink:href="src/icons/videoSpriteIcons.svg#sound"></use></svg>`;
-    const value = volume.value;
-    volume.style.background = `linear-gradient(to right, #125263 0%, #125263 ${value}%, #fff ${value}%, #fff 100%)`;
-  } else {
-    video.volume = 0;
-    mute.innerHTML = `<svg class="icon"><use xlink:href="src/icons/videoSpriteIcons.svg#mute"></use></svg>`;
-    const value = video.volume;
-    volume.style.background = `linear-gradient(to right, #125263 0%, #125263 ${value}%, #fff ${value}%, #fff 100%)`;
-  }
-}
-
-function handleProgress() {
-  const percent =
-    (video.currentTime / video.duration) * 100;
-  progress.style.background = `linear-gradient(to right, #125263 0%, #125263 ${percent}%, #fff ${percent}%, #fff 100%)`;
-  progressBar.style.left = `${percent}%`;
-}
-
-function skip() {
-  video.currentTime += parseFloat(this.dataset.skip);
-}
-
-function toggleFullscreen() {
-  if (!document.fullscreenElement) {
-    player.requestFullscreen();
-  } else {
-    document.exitFullscreen();
-  }
-}
-
-function togglePlaybackRate(value) {
-  let next = video.playbackRate + value;
-  if (next >= 0.25 && next <= 2) {
-    video.playbackRate = next;
-  }
-}
-
-// Even Listener 'click'
-
-fullscreen.addEventListener('click', toggleFullscreen);
-
-video.addEventListener('play', updateButton);
-video.addEventListener('pause', updateButton);
-video.addEventListener('click', togglePlay);
-video.addEventListener('timeupdate', handleProgress);
-
-progress.addEventListener('click', scrub);
-volume.addEventListener('change', videoChangeVolume);
-mute.addEventListener('click', videoMute);
-
-toggle.addEventListener('click', togglePlay);
-
-// Even Listener keyboard
-document.addEventListener('keyup', interactionKeyboard);
-
-function interactionKeyboard(event) {
-  switch (event.code) {
-    case 'Space':
-      togglePlay();
-      break;
-    case 'KeyM':
-      videoMute();
-      break;
-    case 'KeyF':
-      toggleFullscreen();
-      break;
-    case 'KeyJ':
-      video.currentTime -= 10;
-      break;
-    case 'KeyL':
-      video.currentTime += 10;
-      break;
-    case 'Comma':
-      togglePlaybackRate(-0.25);
-      break;
-    case 'Period':
-      togglePlaybackRate(0.25);
-      break;
-    case 'Digit0':
-    case 'Digit1':
-    case 'Digit2':
-    case 'Digit3':
-    case 'Digit4':
-    case 'Digit5':
-    case 'Digit6':
-    case 'Digit7':
-    case 'Digit8':
-    case 'Digit9':
-    case 'Numpad0':
-    case 'Numpad1':
-    case 'Numpad2':
-    case 'Numpad3':
-    case 'Numpad4':
-    case 'Numpad5':
-    case 'Numpad6':
-    case 'Numpad7':
-    case 'Numpad8':
-    case 'Numpad9':
-      if (isNaN(+event.key)) {
-        break;
-      }
-      video.currentTime =
-        (video.duration / 10) * +event.key;
-      break;
-  }
-}
-
-// interaction progress-bar and volume
-volume.addEventListener('input', function () {
-  const value = this.value;
-  this.style.background = `linear-gradient(to right, #125263 0%, #125263 ${value}%, #fff ${value}%, #fff 100%)`;
-});
+console.log(`  - вёрстка валидная +10 Надпись "Document checking completed. No errors or warnings to show." +10
+  - вёрстка семантическая +20  
+    В коде страницы присутствуют семантические теги HTML5, 'aside, footer, header, main, nav, section', используются заголовки 'h1-h6'. Заголовок 'h1' только один.
+  - 2 балла за каждый уникальный семантический тег HTML5 и за каждый уникальный заголовок 'h1-h6'.
+  - для оформления СV используются css-стили +10
+  - контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы +10
+  - вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10
+  - есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится   адаптивным. +10 
+  - на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt +10
+  - контакты для связи и перечень навыков оформлены в виде списка 'ul > li' +10
+  - CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10
+  - CV содержит пример вашего кода с подсветкой кода. +10
+  - CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10
+  - CV выполнено на английском языке +10
+  - выполнены требования к 'Pull Request': есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка +10  
+  - есть видеорезюме автора CV на английском языке. Видеорезюме встроено в страницу CV как видео, а не в виде кнопки или ссылки. Продолжительность видео 5 минут. В описание видео на YouTube добавлена ссылка на его транскрипцию на английском языке. +10     
+  - дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию. +10
+`)

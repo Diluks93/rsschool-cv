@@ -312,9 +312,9 @@
         <h3 class="title title_fz36">Example code</h3>
         <div class="divider"></div>
         <pre><code class="language-js">
-          function maxSum(root) {
-            return !root ? 0 : root.value + Math.max( maxSum( root.left ), maxSum( root.right ) )
-          }
+  function maxSum(root) {
+    return !root ? 0 : root.value + Math.max( maxSum( root.left ), maxSum( root.right ) )
+  }
         </code></pre>
       </div>
     </section>
@@ -322,27 +322,7 @@
       <div class="container">
         <h3 class="title title_fz36">Video</h3>
         <div class="divider"></div>
-        <div class="video__player">
-          <video class="video__video play" poster="src/img/poster0.jpg" data-content="0" src="src/video/video0.mp4"></video>
-          <button>
-              <svg class="icon"><use xlink:href="src/icons/videoSpriteIcons.svg#play"></use></svg>
-          </button>
-          <div class="video__controls">
-            <button class="video__btn toggle-play" id="play">
-              <svg class="icon"><use xlink:href="src/icons/videoSpriteIcons.svg#playSmall"></use></svg>
-            </button>
-            <div class="video__controls_progress" id="progress">
-              <div class="video__controls_progress-filled" id="progress-filled"></div>
-            </div>
-            <button class="video__btn" id="mute">
-              <svg class="icon"><use xlink:href="src/icons/videoSpriteIcons.svg#sound"></use></svg>
-            </button>
-            <input type="range" value="100" min="0" max="100" step="1" class="video__controls_progress" id="volume">
-            <button class="video__btn" id="fullscreen">
-              <svg class="icon"><use xlink:href="src/icons/videoSpriteIcons.svg#fullscreen"></use></svg>
-            </button>
-          </div>
-        </div>
+        <iframe src="https://www.youtube.com/embed/CcHbuumKsFE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
     <section class="portfolio" id="portfolio"> <!-- PORTFOLIO -->
@@ -350,16 +330,16 @@
         <h3 class="title title_fz36">My work</h3>
         <div class="divider"></div>
         <div class="portfolio__wrapper">
-          <a href="src/projects/uber" target="blank" class="portfolio__item">
+          <a href="src/projects/uber" target="blank" class="portfolio__item" title="uber">
             <img src="src/img/works/uber.jpg" alt="uber">
           </a>
-          <a href="src/projects/pulse" target="blank" class="portfolio__item">
+          <a href="src/projects/pulse" target="blank" class="portfolio__item" title="pulse">
             <img src="src/img/works/pulse.jpg" alt="pulse">
           </a>
-          <a href="src/projects/izogradiy/" target="blank" class="portfolio__item vertikal">
+          <a href="src/projects/izogradiy/" target="blank" class="portfolio__item vertikal" title="izogradiy">
             <img src="src/img/works/izogradiy.jpg" alt="izogradiy">
           </a>
-          <a href="src/projects/kofe" target="blank" class="portfolio__item horizontal">
+          <a href="src/projects/kofe" target="blank" class="portfolio__item horizontal" title="kofe">
             <img src="src/img/works/coffee.jpg" alt="coffee">
           </a>
         </div>
@@ -479,7 +459,7 @@
   <footer class="footer"> <!-- FOOTER -->
     <div class="container">
       <div class="footer__wrap">
-        <a class="footer__link" href="https://rs.school/js/"><img class="footer__img" src="src/icons/rs_school_js.svg" alt="rs_school_js_logo"></a>
+        <a class="footer__link" href="https://rs.school/js/" target="blank"><img class="footer__img" src="src/icons/rs_school_js.svg" alt="rs_school_js_logo"></a>
         <div class="footer__wrapper">
           <h4 class="footer__title">RS School. JS / Frontend Development Course</h4>
           <h5 class="footer__subtitle">2021</h5>

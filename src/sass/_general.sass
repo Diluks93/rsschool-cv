@@ -1,0 +1,258 @@
+.container
+  display: flex
+body
+  border: 1px solid $gray
+.connection,
+.main
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-content: space-between
+  width: 31%
+.main
+  width: 69%
+
+.block
+  margin-top: 12px
+  margin-left: 12px
+  width: 95%
+  padding: 20px
+  text-align: center
+  color: $white
+  background: $blackSea
+
+  border-radius: 15px
+  &:last-child
+    margin-bottom: 12px
+  hr
+    margin-top: 0
+    margin-bottom: 0
+
+.header
+  figure
+    max-width: 50%
+    margin: 0 auto
+  &__avatar
+    width: 125px
+    height: 125px
+    text-align: center
+    border-radius: 100%
+    object-position: -128px
+    object-fit: cover
+    
+  &__title
+    margin-top: 10px
+    font-size: 20px
+    text-transform: capitalize
+    span
+      font-weight: 800
+  &__subtitle
+    font-size: 14px
+
+.contact,
+.follow,
+.certification,
+.experience
+  ul
+    list-style-type: none
+    padding-left: 0
+  &__title
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+  &__wrapper
+    display: flex
+    margin-top: 10px
+    justify-content: space-between
+    align-items: center
+    fill: $aquamarine
+    &:nth-child(6)
+      div
+        margin-left: 11px
+      .icon
+        width: 28px
+        height: 28px  
+        margin-left: -4px
+        fill: $aquamarine 
+    div
+      margin-left: 15px
+    span
+      display: block
+      text-align: left
+      &::first-letter
+        text-transform: capitalize
+  .icon
+    width: 20px
+    height: 20px
+    margin: 0
+    &:nth-child(n+2):nth-child(-n+3)
+      width: 18px
+      height: 18px
+    &__wrapper
+      margin: 0
+      text-align: left      
+  &__phone,
+  &__email,
+  &__link
+    display: block
+    font-size: 12px
+    text-decoration: none
+    color: $aquamarine
+    &:hover
+      color: $aquamarine
+  &__email
+    &:last-child
+      margin-left: -20px
+  &__address
+    margin-bottom: 0
+    font-size: 12px
+    text-align: left
+    text-transform: capitalize
+    color: $aquamarine 
+
+.about,
+.education,
+.ability
+  display: block
+  margin: 5px 10px
+  font-size: 13px
+  line-height: 18px
+  text-align: justify
+  color: $black
+  border-right: 1px solid $blackSea
+  border-bottom-right-radius: 40px
+  border-bottom: 1px solid $blackSea 
+  box-shadow: 2px 2px 10px $gray 
+  background: #C9D6FF
+  background: -webkit-linear-gradient(to top, #E2E2E2, #C9D6FF)
+  background: linear-gradient(to top, #E2E2E2, #C9D6FF)
+
+  &:first-child
+    margin-top: 12px 
+  &:last-child
+    margin-bottom: 12px 
+  &__title
+    padding: 5px
+    font-size: 22px
+    text-transform: uppercase
+    font-weight: 800
+    color: $white
+    background-color: $blackSea
+    border-bottom: 1px solid $blackSea    
+  &__descr
+    padding: 10px
+    padding-top: 0
+    padding-bottom: 5px
+    ul
+      margin: 5px 0
+    li::marker
+      color: $blackSea
+    span,
+    time
+      font-weight: 800
+      &:last-child
+        display: block
+        margin-top: 5px
+.education
+  &__descr
+    position: relative
+    time
+      margin: 0 10px 
+    &_link
+      font-weight: 800
+      text-decoration: none
+      color: $black
+      &:hover
+        color: $black
+.ability
+  &__descr
+    &_link
+      font-weight: 800
+      text-decoration: none
+      color: $black
+      &:hover
+        color: $black
+    p
+      margin-top: 5px
+      margin-bottom: 5px
+    span
+      &:last-child
+        display: inline
+        margin-top: 0
+    .icon
+      width: 14px
+      height: 14px
+      vertical-align: text-top
+      fill: $blackSea
+/* TABS */
+a .active
+  color: $blackSea
+#contents
+  position: absolute
+  left: 40%
+  top: 20%
+  max-width: 300px
+  width: 100%
+  height: 150px 
+.content
+  display: none
+.content.active 
+  display: block
+  padding: 15px
+  font-size: 10px
+  line-height: 15px
+  font-weight: 400
+  color: $aquamarine
+  background-color: rgba(23, 65, 128, 0.9)
+  border-radius: 15px
+  box-shadow: 0 0 10px $gray
+/* END TABS */
+
+.footer
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: 0 10px 10px
+  padding: 5px
+  background-color: $blackSea
+  border-radius: 15px
+  color: $aquamarine
+  &__link
+    display: block
+    width: 100px
+    height: 40px
+  &__img
+    fill: $aquamarine
+    width: 100px
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    fill: $aquamarine
+    &:last-child
+      flex-direction: row
+    .icon
+      width: 20px
+      height: 20px  
+      margin-left: 0px
+      fill: $aquamarine 
+    div
+      height: 40px
+      margin-left: 10px
+    span
+      font-size: 10px
+    .footer__link
+      font-size: 10px
+      text-decoration: none
+      color: $aquamarine
+      &:hover
+        color: $aquamarine
+  &__title
+    margin-bottom: 2px
+    text-align: center
+    font-size: 14px
+  &__subtitle
+    margin-bottom: 2px
+    font-size: 10px
+    

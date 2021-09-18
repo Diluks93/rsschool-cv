@@ -9,169 +9,273 @@
   <meta name="keywords" content="rsschool, CV, Resume HTML, CSS, Git, Basics">
   <meta name="author" content="Dmitrii Ilyukovich(@Diluks93)">
   <link rel="shortcut icon" href="src/icons/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;0,800;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/nord.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <link rel="stylesheet" href="src/css/style.css">
   <title>CV</title>
 </head>
 
 <body>
-  <div class="container">
-    <section class="connection">
-      <header class="header block">
-          <div class="header__avatar"></div>
-          <h1 class="header__title">dmitrii <span>ilyukovich</span></h1>
-          <h2 class="header__subtitle">student rsschool</h2>
-      </header>
-      <aside class="contact block">
-        <h2 class="contact__title">contact me</h2>
-        <hr>
-        <ul>
-          <li class="contact__wrapper">
-            <svg class="icon">
-              <use xlink:href="src/icons/sprite.svg#phone"></use>
-            </svg>
-            <div>
-              <span>phone:</span>
-              <a href="tel:+375336921215" class="contact__phone">+375 (33) 692-12-15</a>
-              <a href="tel:+375291657957" class="contact__phone">+375 (29) 165-79-57</a>
-              <div class="icon__wrapper">
-                <svg class="icon">
-                  <use xlink:href="src/icons/sprite.svg#viber"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="src/icons/sprite.svg#telegram"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="src/icons/sprite.svg#whatsapp"></use>
-                </svg>
-              </div>
-            </div>
-          </li>
-          <li class="contact__wrapper">
-            <svg class="icon">
-              <use xlink:href="src/icons/sprite.svg#marker"></use>
-            </svg>
-            <div>
-              <span>address:</span>
-              <address class="contact__address">belarus, mogilev</address>
-            </div>
-          </li>
-          <li class="contact__wrapper">
-            <svg class="icon">
-              <use xlink:href="src/icons/sprite.svg#mail"></use>
-            </svg>
-            <div>
-              <span>e-mail:</span>
-              <a href="email:mr.ilyukovich@gmail.com" class="contact__email">mr.ilyukovich@gmail.com</a>
-              <a href="email:mr.ilyukovich@mail.ru" class="contact__email">mr.ilyukovich@mail.ru</a>
-            </div>
-          </li>
-          <li class="contact__wrapper">
-            <svg class="icon">
-              <use xlink:href="src/icons/sprite.svg#discord"></use>
-            </svg>
-            <div>
-              <span>discord</span>
-              <a href="https://discord.com/Diluks#8227" class="contact__link">discord.com/Diluks</a>
-            </div>
-          </li>
-          <li class="contact__wrapper">
-            <svg class="icon">
-              <use xlink:href="src/icons/sprite.svg#skype"></use>
-            </svg>
-            <div>
-              <span>skype</span>
-              <a href="https://join.skype.com/invite/OsjFBuVWbuTr" class="contact__link">skype.com/invite</a>
-            </div>
-          </li>
-        </ul>
-      </aside>
-      <aside class="follow block">
-        <h2 class="follow__title">follow me</h2>
-        <hr>
-        <ul>
-          <li class="follow__wrapper">
-            <svg class="icon">
-              <use xlink:href="src/icons/sprite.svg#github"></use>
-            </svg>
-            <div>
-              <span>GitHub</span>
-              <a href="https://github.com/Diluks93" class="follow__link">github.com/Diluks93</a>
-            </div>
-          </li>
-          <li class="follow__wrapper">
-            <svg class="icon">
-              <use xlink:href="src/icons/sprite.svg#vk"></use>
-            </svg>
-            <div>
-              <span>vkontakte</span>
-              <a href="https://vk.com/dmitriyfart" class="follow__link">vk.com/dmitriyfart</a>
-            </div>
-          </li>
-          <li class="follow__wrapper">
-            <svg class="icon">
-              <use xlink:href="src/icons/sprite.svg#instagram"></use>
-            </svg>
-            <div>
-              <span>instagram</span>
-              <a href="https://www.instagram.com/dimkaizum" class="follow__link">instagram.com/dimka</a>
-            </div>
-          </li>
-        </ul>
-      </aside>
-      <aside class="experience block">
-        <h2 class="experience__title">work experience</h2>
-        <hr>
-        <div class="experience__wrapper">
-            <a href="https://github.com/Diluks93/Izogradiy.git" class="experience__link">izogradiy</a>
-            <a href="https://github.com/Diluks93/uber.git" class="experience__link">uber</a>
-            <a href="https://github.com/Diluks93/pulse.git" class="experience__link">pulse</a>
-        </div>
-      </aside>
-    </section>
+  <aside class="sidepanel"> <!-- MENU PANEL -->
+    <img src="src/img/circles-bg.png" alt="background" class="top">
+    <img src="src/img/dialog-2.png" alt="background" class="left">
+    <ul class="sidepanel__links">
+      <li>
+        <a href="https://www.instagram.com/dimkaizum/" target="blank" class="sidepanel__link">
+          <svg class="sidepanel__icon">
+            <use xlink:href="src/icons/sprite.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Diluks93" target="blank" class="sidepanel__link">
+          <svg class="sidepanel__icon">
+            <use xlink:href="src/icons/sprite.svg#github"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="blank" class="sidepanel__link">
+          <svg class="sidepanel__icon">
+            <use xlink:href="src/icons/sprite.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="tel:80291657957" class="sidepanel__link">
+          <svg class="sidepanel__icon">
+            <g clip-path="url(#clip0)">
+              <path d="M17.0528 2.90593C15.1817 1.03093 12.6935 -0.000320435 10.0411 -0.000320435C4.58017 -0.000320435 0.134857 4.44499 0.134857 9.90984C0.134857 11.6559 0.591888 13.363 1.45908 14.863L0.0528259 19.9997L5.30673 18.6208C6.75595 19.4098 8.38486 19.8278 10.0411 19.8278H10.045C15.506 19.8278 19.9552 15.3825 19.9552 9.91765C19.9552 7.26921 18.9239 4.78093 17.0528 2.90593ZM10.045 18.1559C8.56454 18.1559 7.11533 17.7575 5.8497 17.0075L5.54892 16.8278L2.43173 17.6442L3.26376 14.6051L3.06845 14.2926C2.24033 12.9841 1.80673 11.4684 1.80673 9.90984C1.80673 5.36687 5.50205 1.67155 10.0489 1.67155C12.2481 1.67155 14.3185 2.53093 15.8731 4.08562C17.4278 5.64421 18.2833 7.71062 18.2833 9.91374C18.2794 14.4606 14.5841 18.1559 10.045 18.1559ZM14.5606 11.9841C14.3145 11.8591 13.0958 11.2614 12.8692 11.1794C12.6427 11.0973 12.4786 11.0544 12.3106 11.3044C12.1466 11.5505 11.67 12.1091 11.5255 12.277C11.381 12.4411 11.2364 12.4645 10.9903 12.3395C10.7442 12.2145 9.94345 11.9528 8.99814 11.1091C8.26376 10.4528 7.76376 9.6403 7.61923 9.39421C7.4747 9.14812 7.60361 9.0114 7.72861 8.8903C7.84189 8.78093 7.9747 8.60124 8.0997 8.45671C8.2247 8.31218 8.26376 8.21062 8.34579 8.04265C8.42783 7.87859 8.38876 7.73405 8.32626 7.60905C8.26376 7.48405 7.76767 6.2653 7.56454 5.76921C7.36533 5.28484 7.15829 5.35124 7.00595 5.34343C6.86142 5.33562 6.69736 5.33562 6.53329 5.33562C6.36923 5.33562 6.0997 5.39812 5.87314 5.64421C5.64658 5.8903 5.00595 6.49187 5.00595 7.71062C5.00595 8.92937 5.89267 10.1051 6.01767 10.2731C6.14267 10.4372 7.76376 12.9411 10.2481 14.0114C10.838 14.2653 11.2989 14.4176 11.6583 14.5348C12.252 14.7223 12.7911 14.695 13.2169 14.6325C13.6935 14.5622 14.6817 14.0348 14.8888 13.4567C15.0958 12.8786 15.0958 12.3825 15.0333 12.2809C14.9747 12.1716 14.8106 12.1091 14.5606 11.9841Z"/>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://vk.com/dmitriyfart" target="blank" class="sidepanel__link">
+          <svg class="sidepanel__icon">
+            <use xlink:href="src/icons/sprite.svg#vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="tel:80291657957" class="sidepanel__link">
+          <svg class="sidepanel__icon">
+            <use xlink:href="src/icons/sprite.svg#viber"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://t.me/DimkaIlyukovich" target="blank" class="sidepanel__link">
+          <svg class="sidepanel__icon">
+            <use xlink:href="src/icons/sprite.svg#telegram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:mr.ilyukovich@mail.ru" class="sidepanel__link">
+          <svg class="sidepanel__icon">
+            <use xlink:href="src/icons/sprite.svg#mail"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://join.skype.com/invite/OsjFBuVWbuTr" target="blank" class="sidepanel__link">
+          <svg class="sidepanel__icon">
+            <use xlink:href="src/icons/sprite.svg#skype"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:mr.ilyukovich@gmail.com" class="sidepanel__link">
+          <svg class="sidepanel__icon">
+            <use xlink:href="src/icons/sprite.svg#gmail"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://discord.com/Diluks#8227" target="blank" class="sidepanel__link">
+          <svg class="sidepanel__icon">
+            <use xlink:href="src/icons/sprite.svg#discord"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="sidepanel__diveder"></div>
+    <div class="sidepanel__text title title_fz16">Social network</div>
+    <img src="src/img/circles-bg.png" alt="background" class="bottom">
+    <img src="src/img/dialog-1.png" alt="background" class="right">
 
-    <main class="main">
-      <section class="about">
-        <h3 class="about__title">about me</h3>
-        <div class="about__descr">
-          My goal is <span>Full-stuck developer</span>.
-          I want to navigate from all sides of the application release.
-          <br>
-          <span>My strengths:</span>
-          <ul>
-            <li>perseverance,</li>
-            <li>I understand as much as possible what I am doing,</li>
-            <li>learnability,</li>
-            <li>dedication,</li>
-            <li>enthusiasm.</li>
-          </ul>        
-          I haven’t worked in IT, but I’ve been going to turn my life around for a long time. I am well versed in Word, Excel,
-          PowerPoint, AutoCAD, Adobe Reader and other similar applications.
-          <span>I always love to learn new things. I love to study.</span>
+  </aside>
+  <div class="menu">
+    <div class="menu__block">
+      <svg class="menu__icon close">
+        <use xlink:href="src/icons/sprite.svg#close"></use>
+      </svg>
+      <nav>
+        <ul class="menu__list">
+          <li class="menu__link"><a href="#about">About me</a></li>
+          <li class="menu__link"><a href="#education">Education</a></li>
+          <li class="menu__link"><a href="#ability">Ability</a></li>
+          <li class="menu__link"><a href="#code">Example code</a></li>
+          <li class="menu__link"><a href="#video">My video</a></li>
+          <li class="menu__link"><a href="#portfolio">My works</a></li>
+          <li class="menu__link"><a href="#contacts">Contacts</a></li>
+        </ul>
+        <ul class="menu__social">
+          <li>
+            <a href="https://www.instagram.com/dimkaizum/" target="blank" class="menu__social__link">
+              <svg class="menu__icon">
+                <use xlink:href="src/icons/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Diluks93" target="blank" class="menu__social__link">
+              <svg class="menu__icon">
+                <use xlink:href="src/icons/sprite.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="blank" class="menu__social__link">
+              <svg class="menu__icon">
+                <use xlink:href="src/icons/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="tel:80291657957" class="menu__social__link">
+              <svg class="menu__icon">
+                <g clip-path="url(#clip0)">
+                  <path d="M17.0528 2.90593C15.1817 1.03093 12.6935 -0.000320435 10.0411 -0.000320435C4.58017 -0.000320435 0.134857 4.44499 0.134857 9.90984C0.134857 11.6559 0.591888 13.363 1.45908 14.863L0.0528259 19.9997L5.30673 18.6208C6.75595 19.4098 8.38486 19.8278 10.0411 19.8278H10.045C15.506 19.8278 19.9552 15.3825 19.9552 9.91765C19.9552 7.26921 18.9239 4.78093 17.0528 2.90593ZM10.045 18.1559C8.56454 18.1559 7.11533 17.7575 5.8497 17.0075L5.54892 16.8278L2.43173 17.6442L3.26376 14.6051L3.06845 14.2926C2.24033 12.9841 1.80673 11.4684 1.80673 9.90984C1.80673 5.36687 5.50205 1.67155 10.0489 1.67155C12.2481 1.67155 14.3185 2.53093 15.8731 4.08562C17.4278 5.64421 18.2833 7.71062 18.2833 9.91374C18.2794 14.4606 14.5841 18.1559 10.045 18.1559ZM14.5606 11.9841C14.3145 11.8591 13.0958 11.2614 12.8692 11.1794C12.6427 11.0973 12.4786 11.0544 12.3106 11.3044C12.1466 11.5505 11.67 12.1091 11.5255 12.277C11.381 12.4411 11.2364 12.4645 10.9903 12.3395C10.7442 12.2145 9.94345 11.9528 8.99814 11.1091C8.26376 10.4528 7.76376 9.6403 7.61923 9.39421C7.4747 9.14812 7.60361 9.0114 7.72861 8.8903C7.84189 8.78093 7.9747 8.60124 8.0997 8.45671C8.2247 8.31218 8.26376 8.21062 8.34579 8.04265C8.42783 7.87859 8.38876 7.73405 8.32626 7.60905C8.26376 7.48405 7.76767 6.2653 7.56454 5.76921C7.36533 5.28484 7.15829 5.35124 7.00595 5.34343C6.86142 5.33562 6.69736 5.33562 6.53329 5.33562C6.36923 5.33562 6.0997 5.39812 5.87314 5.64421C5.64658 5.8903 5.00595 6.49187 5.00595 7.71062C5.00595 8.92937 5.89267 10.1051 6.01767 10.2731C6.14267 10.4372 7.76376 12.9411 10.2481 14.0114C10.838 14.2653 11.2989 14.4176 11.6583 14.5348C12.252 14.7223 12.7911 14.695 13.2169 14.6325C13.6935 14.5622 14.6817 14.0348 14.8888 13.4567C15.0958 12.8786 15.0958 12.3825 15.0333 12.2809C14.9747 12.1716 14.8106 12.1091 14.5606 11.9841Z"/>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://vk.com/dmitriyfart" target="blank" class="menu__social__link">
+              <svg class="menu__icon">
+                <use xlink:href="src/icons/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="tel:80291657957" class="menu__social__link">
+              <svg class="menu__icon">
+                <use xlink:href="src/icons/sprite.svg#viber"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/DimkaIlyukovich" target="blank" class="menu__social__link">
+              <svg class="menu__icon">
+                <use xlink:href="src/icons/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:mr.ilyukovich@mail.ru" class="menu__social__link">
+              <svg class="menu__icon">
+                <use xlink:href="src/icons/sprite.svg#mail"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://join.skype.com/invite/OsjFBuVWbuTr" target="blank" class="menu__social__link">
+              <svg class="menu__icon">
+                <use xlink:href="src/icons/sprite.svg#skype"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:mr.ilyukovich@gmail.com" class="menu__social__link">
+              <svg class="menu__icon">
+                <use xlink:href="src/icons/sprite.svg#gmail"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.com/Diluks#8227" target="blank" class="menu__social__link">
+              <svg class="menu__icon">
+                <use xlink:href="src/icons/sprite.svg#discord"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu__overlay"></div>
+  </div>
+  <header class="promo"> <!-- HEADER -->
+    <div class="hamburger">
+      <span></span>
+      <span class="long"></span>
+      <span></span>
+    </div>
+    <img src="src/img/circles-bg.png" alt="background" class="hamburger__right">
+    <div class="container">
+      <div class="promo__wrap">
+        <h3 class="title title_fz16 promo__subtitle">My name is Dmitrii Ilyukovich</h3>
+        <h1 class="title title_fz48 promo__title">I am an rsschool student from the city of Mogilev</h1>
+        <div class="promo__btns">
+          <a href="#portfolio" class="promo__link btn">Portfolio</a>
+          <a href="#about" class="promo__link">About me</a>
         </div>
-      </section>
-      <section class="education">
-        <h3 class="education__title">education</h3>
+      </div>
+      <img src="src/img/promo.png" alt="avatar" class="promo__img">      
+    </div>
+  </header>
+  <main>
+    <section class="about" id="about"> <!-- ABOUT -->
+      <div class="container">
+        <div class="about__wrap">
+          <div class="about__photo">
+            <img src="/src/img/photo.jpg" alt="photo">
+          </div>
+          <div class="about__descr">
+            <h2 class="title title_fz16 about__title">About me</h2>
+            <h3 class="title title_fz36 about__subtitle">My name is Dmitrii Ilyukovich</h3>
+            <div class="divider"></div>
+            <div class="about__text">
+              <p>My goal is <mark>Full-stuck developer</mark> I want to navigate from all sides of the application release.</p>
+              <p>My strengths:</p>
+              <ul>
+                <li>perseverance</li>
+                <li>I understand as much as possible what I am doing,</li>
+                <li>learnability</li>
+                <li>dedication</li>
+                <li>enthusiasm</li>
+              </ul>
+              <p>I haven’t worked in IT, but I’ve been going to turn my life around for a long time. I am well versed in Word, Excel, PowerPoint, AutoCAD, Adobe Reader and other similar applications.</p>           
+              <p>I always love to learn new things. I love to study.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="education" id="education"> <!-- EDUCATION -->
+      <div class="container">
+        <h3 class="title title_fz36">Education</h3>
+        <div class="divider"></div>
         <div class="education__descr">
           Full-time higher education in construction in the direction of "Highways"<br>
-          <time datetime="2010">2010</time>&#8212<time datetime="2010">2015</time> <span><a class="education__descr_link" href="http://bru.by/">Belorussian-Russian University</a></span><br>
+          <time datetime="2010">2010</time>&#8212;<time datetime="2010">2015</time> <span><a class="education__descr_link" href="http://bru.by/">Belorussian-Russian University</a></span><br>
           Higher education by correspondence in the direction of "Industrial and civil construction"<br>
-          <time datetime="2013">2013</time>&#8212<time datetime="2015">2015</time><br>
+          <time datetime="2013">2013</time>&#8212;<time datetime="2015">2015</time><br>
           Master's degree in absentia on the specialization "Construction"<br>
-          <time datetime="2015">2015</time>&#8212<time datetime="2017">2017</time><br>
+          <time datetime="2015">2015</time>&#8212;<time datetime="2017">2017</time><br>
           <span>Completed courses:</span>
           <ul id="tabs">
             <li>in the IT-laboratory at the University of the Belarusian-Russian University</li>
             <li>free courses on the <a class="education__descr_link" data-btn="1" href="https://wayup.in/">WayUP</a> platform</li>
             <li>paid courses on the <a class="education__descr_link" data-btn="2" href="https://beonmax.com/">beONmax</a> platform (currently I have a subscription, I am taking it in parallel with the course at RS School)</li>
             <li>according to the guideline I take courses on <a class="education__descr_link" data-btn="3" href="https://ru.code-basics.com/">code-basics</a></li>
+            <li>frontend Development Course. Preparatory stage <a class="education__descr_link" data-btn="4" href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0">rsschool</a></li>
           </ul>
           <time datetime="2021">2021</time><br>
-          My English level is A0. I want to go to English courses because I feel the need to. I write my current resume using
-          google translate
+          My English level is A1+. I go to English courses in streamline
           <div id="contents">
             <div class="content" data-content="1">WayUP is a community of successful freelancers. We teach web design, website
               development and freelancing with a guarantee of earnings even in the learning process</div>
@@ -181,43 +285,199 @@
             <div class="content" data-content="3">The easiest way to experience coding right in your browser, Code Basics is an
               online platform featuring free programming tutorials and an interactive coding environment. Every lesson comes with
               an exercise to practice.</div>
+            <div class="content" data-content="4">The preparatory stage will help those who are little or not at all familiar with programming and would like to subsequently successfully study at RS School</div>
           </div>
         </div>
-      </section>
-      <section class="ability">
-        <h3 class="ability__title">ability</h3>
+      </div>
+    </section>
+    <section class="ability" id="ability"> <!-- ABILITY -->
+      <div class="container">
+        <h3 class="title title_fz36">Ability</h3>
+        <div class="divider"></div>
         <div class="ability__descr">
-          <p>I'm not bad at <svg class="icon"><use xlink:href="src/icons/sprite.svg#html"></use></svg> <span>HTML5</span>, <svg class="icon"><use xlink:href="src/icons/sprite.svg#css"></use></svg> <span>CSS3</span>. I'm using the <svg class="icon"><use xlink:href="src/icons/sprite.svg#sass"></use></svg> <span>SASS</span> preprocessor. I use sematic tags, flex-box, grids, animations css. I can customize the adaptation.</p>
-          <p>Good at <svg class="icon"><use xlink:href="src/icons/sprite.svg#bootstrap"></use></svg> <span>BOOTSTRAP5</span>.</p>
-          <p>I speak <svg class="icon"><use xlink:href="src/icons/sprite.svg#javascript"></use></svg> <span>JavaScript</span> at the level of <em>ModalWindow, Slider, Tabs and similar scripts</em>. With the help of <svg class="icon"><use xlink:href="src/icons/sprite.svg#jquery"></use></svg> <span>Jquery</span>, I can customize the validation and mask of forms, as well as use various frameworks (<em>parallax, swipper, etc.</em>).</p>
-          <p>I study <svg class="icon"><use xlink:href="src/icons/sprite.svg#php"></use></svg> <span>PHP</span> and <svg class="icon"><use xlink:href="src/icons/sprite.svg#mysql"></use></svg> <span>MySQL</span> (so far only the basics), with the help of mailer I can set up sending letters to mail.</p>
-          <p>I study the <svg class="icon"><use xlink:href="src/icons/sprite.svg#bem"></use></svg> <span>BEM</span> methodology and try to apply it - it's convenient.</p>
+          <p>I'm not bad at <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#html"></use></svg> <span>HTML5</span>, <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#css"></use></svg> <span>CSS3</span>. I'm using the <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#sass"></use></svg> <span>SASS</span> preprocessor. I use sematic tags, flex-box, grids, animations css. I can customize the adaptation.</p>
+          <p>Good at <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#bootstrap"></use></svg> <span>BOOTSTRAP5</span>.</p>
+          <p>I speak <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#javascript"></use></svg> <span>JavaScript</span> at the level of <em>ModalWindow, Slider, Tabs and similar scripts</em>. With the help of <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#jquery"></use></svg> <span>Jquery</span>, I can customize the validation and mask of forms, as well as use various frameworks (<em>parallax, swipper, etc.</em>).</p>
+          <p>I study <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#php"></use></svg> <span>PHP</span> and <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#mysql"></use></svg> (so far only the basics), with the help of mailer I can set up sending letters to mail.</p>
+          <p>I study the <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#bem"></use></svg> <span>BEM</span> methodology and try to apply it - it's convenient.</p>
           <p>I use <span>PixelPerfect</span> and the <span>W3C</span> validator.</p>
-          <p>I think I know <svg class="icon"><use xlink:href="src/icons/sprite.svg#git"></use></svg> <span>GIT</span> 2/5 and am eager to learn it (very useful). <em>I don't know any other version control systems</em>.</p>
-          <p>I am using <svg class="icon"><use xlink:href="src/icons/sprite.svg#gulp"></use></svg> <span>Gulp</span>. Not my own development, but downloaded and sorted out <a class="ability__descr_link" href="https://github.com/andreyalexeich/gulp-scss-starter"> gulp-scss-starter-master</a>. I always try to minimize code (<em>SVG sprites, fonts, image re-encoding without loss of quality</em>).</p>
-          <p>I work with <svg class="icon"><use xlink:href="src/icons/sprite.svg#figma"></use></svg> <span>Figma</span>, <svg class="icon"><use xlink:href="src/icons/sprite.svg#photoshop"></use></svg> <span>Photoshop</span>.</p>
+          <p>I think I know <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#git"></use></svg> <span>GIT</span> 2/5 and am eager to learn it (very useful). <em>I don't know any other version control systems</em>.</p>
+          <p>I am using <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#gulp"></use></svg> <span>Gulp</span>. Not my own development, but downloaded and sorted out <a class="ability__descr_link" href="https://github.com/andreyalexeich/gulp-scss-starter"> gulp-scss-starter-master</a>. I always try to minimize code (<em>SVG sprites, fonts, image re-encoding without loss of quality</em>).</p>
+          <p>I work with <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#figma"></use></svg> <span>Figma</span>, <svg class="ability__icon"><use xlink:href="src/icons/sprite.svg#photoshop"></use></svg> <span>Photoshop</span>.</p>
         </div>
-      </section>
-    </main>
-  </div>
-  <footer class="footer">
-    <a class="footer__link" href="https://rs.school/js/"><img class="footer__img" src="src/icons/rs_school_js.svg" alt="rs_school_js_logo"></a>
-    <div class="footer__wrapper">
-      <h4 class="footer__title">RS School. JS / Frontend Development Course. Preparatory stage</h4>
-      <h5 class="footer__subtitle">2021</h5>
-      <h6 class="footer__subtitle">rs2021q3</h6>
-    </div>
-    <div class="footer__wrapper">
-      <svg class="icon">
-        <use xlink:href="src/icons/sprite.svg#github"></use>
-      </svg>
-      <div>
-        <span>GitHub</span>
-        <a href="https://github.com/Diluks93" class="footer__link">github.com/Diluks93</a>
+      </div> 
+    </section>
+    <section class="code" id="code"> <!-- CODE -->
+      <div class="container">
+        <h3 class="title title_fz36">Example code</h3>
+        <div class="divider"></div>
+        <pre><code class="language-js">
+  function maxSum(root) {
+    return !root ? 0 : root.value + Math.max( maxSum( root.left ), maxSum( root.right ) )
+  }
+        </code></pre>
+      </div>
+    </section>
+    <section class="video" id="video"> <!-- VIDEO -->
+      <div class="container">
+        <h3 class="title title_fz36">Video</h3>
+        <div class="divider"></div>
+        <iframe src="https://www.youtube.com/embed/CcHbuumKsFE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio"> <!-- PORTFOLIO -->
+      <div class="container">
+        <h3 class="title title_fz36">My work</h3>
+        <div class="divider"></div>
+        <div class="portfolio__wrapper">
+          <a href="src/projects/uber" target="blank" class="portfolio__item" title="uber">
+            <img src="src/img/works/uber.jpg" alt="uber">
+          </a>
+          <a href="src/projects/pulse" target="blank" class="portfolio__item" title="pulse">
+            <img src="src/img/works/pulse.jpg" alt="pulse">
+          </a>
+          <a href="src/projects/izogradiy/" target="blank" class="portfolio__item vertikal" title="izogradiy">
+            <img src="src/img/works/izogradiy.jpg" alt="izogradiy">
+          </a>
+          <a href="src/projects/kofe" target="blank" class="portfolio__item horizontal" title="kofe">
+            <img src="src/img/works/coffee.jpg" alt="coffee">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts"> <!-- CONTACTS -->
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__photo">
+            <img src="/src/img/photoContacts.jpg" alt="photo">
+          </div>
+          <div class="contacts__descr">
+            <h2 class="title title_fz16 contacts__title">Contacts</h2>
+            <h3 class="title title_fz36 contacts__subtitle">Link with me in any way</h3>
+            <div class="divider"></div>
+            <ul class="contacts__social">
+              <li>
+                <a href="https://www.instagram.com/dimkaizum/" target="blank" class="contacts__social__link">
+                  <svg class="contacts__icon">
+                    <use xlink:href="src/icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Diluks93" target="blank" class="contacts__social__link">
+                  <svg class="contacts__icon">
+                    <use xlink:href="src/icons/sprite.svg#github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="blank" class="contacts__social__link">
+                  <svg class="contacts__icon">
+                    <use xlink:href="src/icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="tel:80291657957" class="contacts__social__link">
+                  <svg class="contacts__icon">
+                    <g clip-path="url(#clip0)">
+                      <path d="M17.0528 2.90593C15.1817 1.03093 12.6935 -0.000320435 10.0411 -0.000320435C4.58017 -0.000320435 0.134857 4.44499 0.134857 9.90984C0.134857 11.6559 0.591888 13.363 1.45908 14.863L0.0528259 19.9997L5.30673 18.6208C6.75595 19.4098 8.38486 19.8278 10.0411 19.8278H10.045C15.506 19.8278 19.9552 15.3825 19.9552 9.91765C19.9552 7.26921 18.9239 4.78093 17.0528 2.90593ZM10.045 18.1559C8.56454 18.1559 7.11533 17.7575 5.8497 17.0075L5.54892 16.8278L2.43173 17.6442L3.26376 14.6051L3.06845 14.2926C2.24033 12.9841 1.80673 11.4684 1.80673 9.90984C1.80673 5.36687 5.50205 1.67155 10.0489 1.67155C12.2481 1.67155 14.3185 2.53093 15.8731 4.08562C17.4278 5.64421 18.2833 7.71062 18.2833 9.91374C18.2794 14.4606 14.5841 18.1559 10.045 18.1559ZM14.5606 11.9841C14.3145 11.8591 13.0958 11.2614 12.8692 11.1794C12.6427 11.0973 12.4786 11.0544 12.3106 11.3044C12.1466 11.5505 11.67 12.1091 11.5255 12.277C11.381 12.4411 11.2364 12.4645 10.9903 12.3395C10.7442 12.2145 9.94345 11.9528 8.99814 11.1091C8.26376 10.4528 7.76376 9.6403 7.61923 9.39421C7.4747 9.14812 7.60361 9.0114 7.72861 8.8903C7.84189 8.78093 7.9747 8.60124 8.0997 8.45671C8.2247 8.31218 8.26376 8.21062 8.34579 8.04265C8.42783 7.87859 8.38876 7.73405 8.32626 7.60905C8.26376 7.48405 7.76767 6.2653 7.56454 5.76921C7.36533 5.28484 7.15829 5.35124 7.00595 5.34343C6.86142 5.33562 6.69736 5.33562 6.53329 5.33562C6.36923 5.33562 6.0997 5.39812 5.87314 5.64421C5.64658 5.8903 5.00595 6.49187 5.00595 7.71062C5.00595 8.92937 5.89267 10.1051 6.01767 10.2731C6.14267 10.4372 7.76376 12.9411 10.2481 14.0114C10.838 14.2653 11.2989 14.4176 11.6583 14.5348C12.252 14.7223 12.7911 14.695 13.2169 14.6325C13.6935 14.5622 14.6817 14.0348 14.8888 13.4567C15.0958 12.8786 15.0958 12.3825 15.0333 12.2809C14.9747 12.1716 14.8106 12.1091 14.5606 11.9841Z"/>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://vk.com/dmitriyfart" target="blank" class="contacts__social__link">
+                  <svg class="contacts__icon">
+                    <use xlink:href="src/icons/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="tel:80291657957" class="contacts__social__link">
+                  <svg class="contacts__icon">
+                    <use xlink:href="src/icons/sprite.svg#viber"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/DimkaIlyukovich" target="blank" class="contacts__social__link">
+                  <svg class="contacts__icon">
+                    <use xlink:href="src/icons/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:mr.ilyukovich@mail.ru" class="contacts__social__link">
+                  <svg class="contacts__icon">
+                    <use xlink:href="src/icons/sprite.svg#mail"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://join.skype.com/invite/OsjFBuVWbuTr" target="blank" class="contacts__social__link">
+                  <svg class="contacts__icon">
+                    <use xlink:href="src/icons/sprite.svg#skype"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:mr.ilyukovich@gmail.com" class="contacts__social__link">
+                  <svg class="contacts__icon">
+                    <use xlink:href="src/icons/sprite.svg#gmail"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://discord.com/Diluks#8227" target="blank" class="contacts__social__link">
+                  <svg class="contacts__icon">
+                    <use xlink:href="src/icons/sprite.svg#discord"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <form action="#" class="contacts__form">
+              <div class="contacts__input">
+                <input name="name" id="name" type="text">
+                <label for="name">Your name</label>
+              </div>
+              <div class="contacts__input">
+                <input name="email" id="email" type="email">
+                <label for="email">Your email</label>
+              </div>
+              <div class="contacts__textarea">
+                <textarea name="text" id="text"></textarea>
+                <label for="text">Text with me</label>
+              </div>
+              <button class="contacts__btn btn">Send message</button>
+            </form>
+          </div>
+        </div>        
+      </div>
+    </section>
+  </main>
+  <footer class="footer"> <!-- FOOTER -->
+    <div class="container">
+      <div class="footer__wrap">
+        <a class="footer__link" href="https://rs.school/js/" target="blank"><img class="footer__img" src="src/icons/rs_school_js.svg" alt="rs_school_js_logo"></a>
+        <div class="footer__wrapper">
+          <h4 class="footer__title">RS School. JS / Frontend Development Course</h4>
+          <h5 class="footer__subtitle">2021</h5>
+          <h6 class="footer__subtitle">rs2021q3</h6>
+        </div>
+        <div class="footer__wrapper">
+          <svg class="icon">
+            <use xlink:href="src/icons/sprite.svg#github"></use>
+          </svg>
+          <div>
+            <span>GitHub</span>
+            <a href="https://github.com/Diluks93" class="footer__link">github.com/Diluks93</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
-<script src="src/js/script.js"></script>
+  <script src="src/js/script.js"></script>
 </body>
 
 </html>

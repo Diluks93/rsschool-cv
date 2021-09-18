@@ -1,0 +1,246 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 50px;
+}
+.icon {
+	background-color: #d9a83d;
+}
+.main {
+	margin: 0 0;
+}
+.d-block {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.carousel-control-next,
+.carousel-control-prev {
+	opacity: 0%
+}
+.sylka {
+	font-family: 'Kelly Slab', cursive;
+	padding: 20px;
+	background-color: #d9a83d;
+	border-radius: 25px;
+	font-size: 30px;
+	position: fixed;
+	left: 44vw;
+	top: 82vh;
+	transition: 0.4s linear;
+	text-decoration: none;
+	color: white;
+}
+.sylka:hover {
+	background-color: white;
+	color: #d9a83d;
+}
+.header {
+	color: white;
+	display: inline-block;
+	text-transform: uppercase;
+	max-width: 900px;
+	text-align: center;
+	position: fixed;
+	z-index: 999;
+	top: 5%;
+}
+h1 {
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	font-size: 180%;
+	letter-spacing: 1.5px;
+}
+.phone,
+.mail {
+	max-width: 270px;
+	position: absolute;
+	font-size: 20px;
+	position: absolute;
+	left: 15%;
+	top: 36%;
+	margin: 10px;
+	transition: 0.4s linear;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.phone a,
+.mail a {
+	text-decoration: none;
+	color: white;
+	padding: 8px;
+}
+.bi-phone-vibrate,
+.bi-mailbox {
+    vertical-align: middle;
+    color: white;
+    width: 35px;
+    height: 35px;
+}
+.bi-phone-vibrate:hover {
+	color: #d9a83d;
+}
+.bi-mailbox:hover {
+	color: #d9a83d;
+}
+.phone a:hover {
+	color: #d9a83d;
+}
+.mail a:hover {
+	color: #d9a83d;
+}
+.phone img,
+.mail img {
+	background-color: white;
+}
+.mail {
+	top: 40%;
+}
+.visually-hidden {
+	z-index: 999;
+}
+/* Media */
+@media (min-width:2560px) {
+	.sylka {
+		left: 45vw;
+		top: 82vh;
+	}
+	.phone,
+	.mail {
+		left: 12%;
+		top: 30%;
+	}
+	.mail {
+		top: 35%;
+	}
+}
+@media (max-width:1440px) {
+	.sylka {
+		left: 42vw;
+		top: 82vh;
+	}
+	.phone,
+	.mail {
+		left: 20%;
+		top: 29%;
+	}
+	.mail {
+		top: 33%;
+	}
+}
+@media (max-width:1100px) {
+	.header {
+		width: 57%;
+	}
+	h1 {
+		font-size: 150%;
+	}
+	.sylka {
+		left: 38vw;
+		top: 82vh;
+	}
+	.phone,
+	.mail {
+		left: 14%;
+	}
+}
+@media (max-width:920px) {
+	.header {
+		margin: 0 auto;
+		width: 100%;
+	}
+	h1 {
+		font-size: 150%;
+	}
+}
+@media (max-width:520px) {
+	h1 {
+		font-size: 90%;
+	}
+	.sylka {
+		font-size: 15px;
+		padding: 10px;
+		left: 38vw;
+		top: 82vh;
+	}
+	.phone,
+	.mail {
+		width: 70%;
+		left: 14%;
+	}
+	.mail {
+		top: 34%;
+	}
+	.phone a,
+	.mail a {
+		font-size: 15px;
+	}
+}
+@media (max-width:280px) {
+	h1 {
+		font-size: 50%;
+		border-top: 2px white solid;
+		border-bottom: 2px white solid;
+	}
+	.phone,
+	.mail {
+		width: 70%;
+		left: 14%;
+	}
+	.mail {
+		top: 34%;
+	}
+	.phone a,
+	.mail a {
+		font-size: 12px;
+	}
+}
+@media (max-height:7600px) {
+	.phone{
+		top: 38%;
+	}
+	.mail {
+		top: 42%;
+	}
+}
+@media (max-height:550px) and (orientation: landscape) {
+	h1 {
+		font-size: 100%;
+	}
+	.phone{
+		top: 38%;
+		left: 18%;
+	}
+	.mail {
+		top: 48%;
+		left: 18%;
+	}
+	.sylka {
+		font-size: 15px;
+		padding: 10px;
+		left: 44vw;
+		top: 82vh;
+	}
+}
+@media (max-height:320px) {
+	h1 {
+		font-size: 90%;
+	}
+	.phone{
+		top: 38%;
+		left: 18%;
+	}
+	.mail {
+		top: 48%;
+		left: 18%;
+	}
+	.sylka {
+		font-size: 15px;
+		padding: 10px;
+		left: 44vw;
+		top: 82vh;
+	}
+}

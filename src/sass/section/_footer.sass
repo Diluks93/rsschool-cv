@@ -1,0 +1,43 @@
+.footer
+  background-color: #11998e
+  &__wrap
+    display: flex
+    justify-content: space-between
+  &__link
+    display: block
+    width: 105px
+    height: 15px
+  &__img
+    fill: $mainColor
+    width: 100px
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    fill: $mainColor
+    &:last-child
+      flex-direction: row
+    .icon
+      width: 20px
+      height: 20px  
+      margin-left: 0px
+      fill: $mainColor 
+    div
+      height: 40px
+      margin-left: 10px
+    span
+      font-size: 10px
+    .footer__link
+      font-size: 10px
+      text-decoration: none
+      color: $mainColor
+      &:hover
+        color: $mainColor
+  &__title
+    margin-bottom: 2px
+    text-align: center
+    font-size: 14px
+  &__subtitle
+    margin-bottom: 2px
+    font-size: 10px

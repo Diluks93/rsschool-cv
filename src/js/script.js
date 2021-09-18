@@ -1,20 +1,47 @@
-const tabs = document.getElementById('tabs'),
- contents = document.querySelectorAll('.content');
+// interactive hamburger //
 
-const changeClass = el => {
- for (let i = 0; i < tabs.children.length; i++) {
-  tabs.children[i].classList.remove('active');
- }
- el.classList.add('active');
-}
+const hamburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.menu'),
+      closeElem = document.querySelector('.close');
 
-tabs.addEventListener('mouseover', e => {
- const currTab = e.target.dataset.btn;
- changeClass(e.target);
- for (let i = 0; i < contents.length; i++) {
-  contents[i].classList.remove('active');
-  if (contents[i].dataset.content === currTab) {
-   contents[i].classList.add('active');
+hamburger.addEventListener('click', () => {
+  menu.classList.add('active')
+});
+
+closeElem.addEventListener('click', () => {
+  menu.classList.remove('active')
+});
+
+// element tabs //
+
+const tab = document.getElementById('tabs'),
+      content = document.querySelectorAll('.content');
+
+tab.addEventListener('mouseover', (e) => {
+  const currTab = e.target.dataset.btn;
+  for (let i = 0; i < content.length; i++) {
+    content[i].classList.remove('active');
+    if (content[i].dataset.content === currTab) {
+      content[i].classList.add('active');
+    }
   }
- }
-})
+});
+
+console.log(`  - вёрстка валидная +10 Надпись "Document checking completed. No errors or warnings to show." +10
+  - вёрстка семантическая +20  
+    В коде страницы присутствуют семантические теги HTML5, 'aside, footer, header, main, nav, section', используются заголовки 'h1-h6'. Заголовок 'h1' только один.
+  - 2 балла за каждый уникальный семантический тег HTML5 и за каждый уникальный заголовок 'h1-h6'.
+  - для оформления СV используются css-стили +10
+  - контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы +10
+  - вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10
+  - есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится   адаптивным. +10 
+  - на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt +10
+  - контакты для связи и перечень навыков оформлены в виде списка 'ul > li' +10
+  - CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10
+  - CV содержит пример вашего кода с подсветкой кода. +10
+  - CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10
+  - CV выполнено на английском языке +10
+  - выполнены требования к 'Pull Request': есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка +10  
+  - есть видеорезюме автора CV на английском языке. Видеорезюме встроено в страницу CV как видео, а не в виде кнопки или ссылки. Продолжительность видео 5 минут. В описание видео на YouTube добавлена ссылка на его транскрипцию на английском языке. +10     
+  - дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию. +10
+`)
